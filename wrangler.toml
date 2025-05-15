@@ -1,0 +1,9 @@
+name = "site-jgregorywalsh"
+type = "javascript"
+
+[build]
+command = "npm run build"
+directory = "dist"
+
+[env]
+NODE_VERSION = "16"

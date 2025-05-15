@@ -1,0 +1,23 @@
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+
+/* Basic styling placeholders */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8fafc; /* Light gray background */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #1f2937; /* Dark gray text */
+}
+
+p {
+    color: #4b5563; /* Medium gray text */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
