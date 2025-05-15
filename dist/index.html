@@ -10,14 +10,27 @@
     <header class="bg-blue-600 text-white py-4">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-2xl font-bold">J. Gregory Walsh</h1>
+            <button id="nav-toggle" class="block md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
             <nav>
-                <ul class="flex space-x-4">
+                <ul id="nav-menu" class="hidden md:flex space-x-4">
                     <li><a href="#" class="hover:underline">Home</a></li>
                     <li><a href="#about" class="hover:underline">About</a></li>
                     <li><a href="#resume" class="hover:underline">Resume</a></li>
                     <li><a href="#contact" class="hover:underline">Contact</a></li>
                 </ul>
             </nav>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-700">
+            <ul class="space-y-2 p-4">
+                <li><a href="#" class="block text-white hover:underline">Home</a></li>
+                <li><a href="#about" class="block text-white hover:underline">About</a></li>
+                <li><a href="#resume" class="block text-white hover:underline">Resume</a></li>
+                <li><a href="#contact" class="block text-white hover:underline">Contact</a></li>
+            </ul>
         </div>
     </header>
 
@@ -47,5 +60,14 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        navToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
