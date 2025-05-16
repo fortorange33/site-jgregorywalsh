@@ -1,3 +1,13 @@
 node_modules/
 .DS_Store
+# Ignore everything in dist by default
 /dist/
+# But do not ignore the directory itself, so exceptions work
+!dist/
+# Allow HTML, CSS, JS files in dist/
+!dist/*.html
+!dist/*.css
+!dist/*.js
+# Allow everything in dist/assets/
+!dist/assets/
+!dist/assets/**
