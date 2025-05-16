@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About – J. Gregory Walsh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="J. Gregory Walsh is a mental health specialist and behavioral researcher with expertise in psychiatric care and analytics. Learn more about his work and Psyber Nexus initiative.">
+  <meta name="keywords" content="J. Gregory Walsh, mental health, behavioral research, Psyber Nexus, psychology, public sector">
+  <meta name="author" content="J. Gregory Walsh">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/js/scripts.js"></script>
+  <style>
+    #mobile-menu {
+      transition: all 0.3s ease-in-out;
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+    #mobile-menu.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+  <!-- Header -->
+  <header class="bg-white shadow fixed top-0 w-full z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-gray-900">
+        <a href="index.html" class="hover:underline">J. Gregory Walsh</a>
+      </h1>
+      <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
+        <a href="about.html" class="hover:underline">About</a>
+        <a href="experience.html" class="hover:underline">Experience</a>
+        <a href="projects.html" class="hover:underline">Projects</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
+      </nav>
+      <button id="mobile-menu-toggle" class="md:hidden focus:outline-none" aria-label="Toggle menu" aria-expanded="false">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 text-sm font-medium text-gray-700">
+      <a href="about.html" class="block hover:underline focus:ring-2 focus:ring-blue-500 focus:outline-none">About</a>
+      <a href="experience.html" class="block hover:underline focus:ring-2 focus:ring-blue-500 focus:outline-none">Experience</a>
+      <a href="projects.html" class="block hover:underline focus:ring-2 focus:ring-blue-500 focus:outline-none">Projects</a>
+      <a href="contact.html" class="block hover:underline focus:ring-2 focus:ring-blue-500 focus:outline-none">Contact</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="pt-32 max-w-3xl mx-auto px-4 space-y-10">
+    <section class="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6">
+      <img src="assets/images/profile.jpg" alt="J. Gregory Walsh" class="w-32 h-32 rounded-full object-cover" />
+      <div>
+        <h2 class="text-3xl font-semibold mb-4 text-gray-900">About Me</h2>
+        <p class="text-base leading-relaxed mb-2">
+          I am a mental health specialist and behavioral researcher with over four years of experience at McLean-Franciscan’s psychiatric unit, a Harvard-affiliated hospital. My work spans front-line psychiatric care, high-acuity crisis de-escalation, and systems-level behavioral analytics. During the COVID-19 pandemic, I founded <strong>Psyber Nexus</strong>, an initiative translating psychological insights into operational intelligence for public sector strategy. I hold a Bachelor’s in Psychology from Siena College and have pursued graduate-level coursework at Boston University and Harvard Extension School.
+        </p>
+        <p class="text-base leading-relaxed">
+          I am seeking opportunities to apply my expertise in investigative, analytic, and mission-critical environments, contributing to the security and integrity of American communities through behavioral science and ethical governance.
+        </p>
+      </div>
+    </section>
+
+    <div class="bg-blue-50 p-6 rounded-lg my-6">
+      <h3 class="text-lg font-semibold text-blue-800">Psyber Nexus</h3>
+      <p class="text-blue-700">
+        Founded during the COVID-19 pandemic, Psyber Nexus bridges psychological insight and operational intelligence to inform public sector strategies.
+      </p>
+    </div>
+
+    <section>
+      <h3 class="text-xl font-semibold mb-2 text-gray-800">Academic Background</h3>
+      <ul class="list-disc list-inside space-y-1">
+        <li><strong>Harvard Extension School</strong> – Graduate-level coursework in psychology</li>
+        <li><strong>Boston University</strong> – Graduate studies in Applied Clinical Psychology</li>
+        <li><strong>Siena College</strong> – Bachelor of Arts, Psychology (2013)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3 class="text-xl font-semibold mb-2 text-gray-800">Strategic Goals</h3>
+      <p class="text-base leading-relaxed">
+        I aim to support law enforcement agencies, public health systems, and oversight bodies in making better decisions through the integration of behavioral science, investigative rigor, and ethical governance.
+      </p>
+      <p class="mt-4">
+        <a href="contact.html" class="text-blue-600 hover:underline">Connect with me</a> to discuss potential collaborations.
+      </p>
+    </section>
+  </main>
+
+  <footer class="mt-20 bg-gray-800 text-white py-8 text-sm text-center">
+    <p class="mb-4">&copy; 2025 J. Gregory Walsh</p>
+    <div class="flex justify-center items-center space-x-6">
+      <a href="https://www.linkedin.com/in/jgregorywalsh" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="assets/icons/linkedin copy.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="LinkedIn" />
+      </a>
+      <a href="https://www.facebook.com/jgregwalsh" target="_blank" rel="noopener" aria-label="Facebook">
+        <img src="assets/icons/icons8-facebook.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="Facebook" />
+      </a>
+      <a href="https://www.researchgate.net/profile/Jg_Walsh" target="_blank" rel="noopener" aria-label="ResearchGate">
+        <img src="assets/icons/icons8-researchgate-24.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="ResearchGate" />
+      </a>
+      <a href="https://github.com/jgwalsh02134" target="_blank" rel="noopener" aria-label="GitHub">
+        <img src="assets/icons/icons8-github-3.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="GitHub" />
+      </a>
+      <a href="https://orcid.org/0000-0002-4420-5724" target="_blank" rel="noopener" aria-label="ORCID">
+        <img src="assets/icons/icons8-orcid.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="ORCID" />
+      </a>
+      <a href="https://www.usajobs.gov/applicant/profile/" target="_blank" rel="noopener" aria-label="USAJobs">
+        <img src="assets/icons/icons8-usa copy2.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="USAJobs" />
+      </a>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Script -->
+  <script>
+    (function () {
+      const toggle = document.getElementById('mobile-menu-toggle');
+      const menu = document.getElementById('mobile-menu');
+      const menuLinks = menu.querySelectorAll('a');
+
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', !expanded);
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('show');
+      });
+
+      menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          toggle.setAttribute('aria-expanded', 'false');
+          menu.classList.add('hidden');
+          menu.classList.remove('show');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
