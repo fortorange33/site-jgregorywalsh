@@ -1,49 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>Contact – J. Gregory Walsh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<footer class="mt-20 bg-gray-800 text-white py-8 text-sm text-center">
-  <p class="mb-4">&copy; <span>2025</span> J. Gregory Walsh</p>
-  <div class="flex justify-center items-center space-x-6">
-    <a href="https://www.linkedin.com/in/jgregorywalsh" target="_blank" rel="noopener" aria-label="LinkedIn">
-      <img src="assets/icons/linkedin.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="LinkedIn profile for J. Gregory Walsh" />
-    </a>
-    <a href="https://saintsnetwork.siena.edu/profile/gregwalsh" target="_blank" rel="noopener" aria-label="Siena College">
-      <img src="assets/icons/siena.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="Siena College Saints Network profile for J. Gregory Walsh" />
-    </a>
-    <a href="mailto:jgwalsh@bu.edu" target="_blank" rel="noopener" aria-label="Email BU">
-      <img src="assets/icons/bu.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="Boston University email for J. Gregory Walsh" />
-    </a>
-    <a href="https://www.researchgate.net/profile/Jg_Walsh" target="_blank" rel="noopener" aria-label="ResearchGate">
-      <img src="assets/icons/icons8-researchgate-24.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="ResearchGate profile for J. Gregory Walsh" />
-    </a>
-    <a href="https://github.com/jgwalsh02134" target="_blank" rel="noopener" aria-label="GitHub">
-      <img src="assets/icons/icons8-github-3.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="GitHub profile for J. Gregory Walsh" />
-    </a>
-    <a href="https://orcid.org/0000-0002-4420-5724" target="_blank" rel="noopener" aria-label="ORCID">
-      <img src="assets/icons/icons8-orcid.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="ORCID profile for J. Gregory Walsh" />
-    </a>
-    <a href="https://www.usajobs.gov/applicant/profile/" target="_blank" rel="noopener" aria-label="USAJobs">
-      <img src="assets/icons/icons8-usa copy2.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="USAJobs profile for J. Gregory Walsh" />
-    </a>
-  </div>
-</footer>
-<script>
-  const toggle = document.getElementById('mobile-menu-toggle');
-  const menu = document.getElementById('mobile-menu');
-  const menuIcon = toggle.querySelector('svg');
-  toggle.addEventListener('click', () => {
-    const expanded = toggle.getAttribute('aria-expanded') === 'true';
-    toggle.setAttribute('aria-expanded', !expanded);
-    menu.classList.toggle('hidden');
-    toggle.setAttribute('aria-label', expanded ? 'Open menu' : 'Close menu');
-  });
-  document.addEventListener('DOMContentLoaded', () => {
-    const yearSpan = document.querySelector('footer p span');
-    if (yearSpan) {
-      yearSpan.textContent = new Date().getFullYear();
-    }
-  });
-</script>
-<script src="assets/js/scripts.js" defer></script>
+<body class="min-h-screen flex flex-col bg-gray-50 text-gray-800 font-sans leading-relaxed">
+  <a href="#main-content" class="sr-only focus:not-sr-only absolute left-2 top-2 bg-blue-600 text-white px-3 py-2 rounded z-50">Skip to main content</a>
+
+  <header class="bg-white shadow fixed top-0 w-full z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-gray-900">
+        <a href="index.html" class="hover:underline">J. Gregory Walsh</a>
+      </h1>
+      <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
+        <a href="about.html" class="hover:underline">About</a>
+        <a href="experience.html" class="hover:underline">Experience</a>
+        <a href="projects.html" class="hover:underline">Projects</a>
+        <a href="contact.html" class="hover:underline" aria-current="page">Contact</a>
+      </nav>
+      <button id="mobile-menu-toggle" class="md:hidden focus:outline-none" aria-label="Open main menu" aria-controls="mobile-menu" aria-expanded="false">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 text-sm font-medium text-gray-700 transition-all duration-200 ease-in-out">
+      <a href="about.html" class="block hover:underline">About</a>
+      <a href="experience.html" class="block hover:underline">Experience</a>
+      <a href="projects.html" class="block hover:underline">Projects</a>
+      <a href="contact.html" class="block hover:underline" aria-current="page">Contact</a>
+    </div>
+  </header>
+
+  <main id="main-content" class="flex-grow pt-32 max-w-3xl mx-auto px-4 space-y-10">
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">Get in Touch</h2>
+      <p>
+        I welcome inquiries from agencies, organizations, and professionals interested in behavioral strategy, public safety innovation, and interdisciplinary problem solving. Please use the contact options below to reach me directly or explore my professional networks.
+      </p>
+    </section>
+    <section class="mt-10">
+      <h3 class="text-xl font-semibold mb-4">Connect with Me</h3>
+      <div class="flex flex-wrap gap-4 items-center">
+        <a href="mailto:jgwalsh@bu.edu" class="inline-flex items-center bg-[#d00000] text-white font-semibold text-sm px-4 py-2 rounded shadow hover:bg-red-700 transition">
+          <img src="assets/icons/bu.svg" alt="BU Email Icon" class="h-5 w-5 mr-2"> Email Me (BU)
+        </a>
+        <a href="https://saintsnetwork.siena.edu/profile/gregwalsh" target="_blank" rel="noopener">
+          <img src="assets/icons/siena.svg" alt="Siena College Saints Network Profile Badge" class="h-8">
+        </a>
+        <a href="https://www.linkedin.com/in/jgregorywalsh" target="_blank" rel="noopener"
+           class="inline-flex items-center bg-[#0072b1] text-white font-semibold text-sm px-4 py-2 rounded shadow hover:bg-[#005885] transition">
+          <img src="assets/icons/linkedin.svg" alt="LinkedIn Icon" class="h-5 w-5 mr-2"> Connect on LinkedIn
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-20 bg-gray-800 text-white py-8 text-sm text-center">
+    <p class="mb-4">&copy; <span>2025</span> J. Gregory Walsh</p>
+    <div class="flex justify-center items-center space-x-6">
+      <a href="https://www.linkedin.com/in/jgregorywalsh" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <img src="assets/icons/linkedin.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="LinkedIn profile for J. Gregory Walsh" />
+      </a>
+      <a href="https://saintsnetwork.siena.edu/profile/gregwalsh" target="_blank" rel="noopener" aria-label="Siena College">
+        <img src="assets/icons/siena.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="Siena College Saints Network profile for J. Gregory Walsh" />
+      </a>
+      <a href="mailto:jgwalsh@bu.edu" target="_blank" rel="noopener" aria-label="Email BU">
+        <img src="assets/icons/bu.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="Boston University email for J. Gregory Walsh" />
+      </a>
+      <a href="https://www.researchgate.net/profile/Jg_Walsh" target="_blank" rel="noopener" aria-label="ResearchGate">
+        <img src="assets/icons/icons8-researchgate-24.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="ResearchGate profile for J. Gregory Walsh" />
+      </a>
+      <a href="https://github.com/jgwalsh02134" target="_blank" rel="noopener" aria-label="GitHub">
+        <img src="assets/icons/icons8-github-3.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="GitHub profile for J. Gregory Walsh" />
+      </a>
+      <a href="https://orcid.org/0000-0002-4420-5724" target="_blank" rel="noopener" aria-label="ORCID">
+        <img src="assets/icons/icons8-orcid.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="ORCID profile for J. Gregory Walsh" />
+      </a>
+      <a href="https://www.usajobs.gov/applicant/profile/" target="_blank" rel="noopener" aria-label="USAJobs">
+        <img src="assets/icons/icons8-usa copy2.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="USAJobs profile for J. Gregory Walsh" />
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('mobile-menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    const menuIcon = toggle.querySelector('svg');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', !expanded);
+      menu.classList.toggle('hidden');
+      toggle.setAttribute('aria-label', expanded ? 'Open menu' : 'Close menu');
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+      const yearSpan = document.querySelector('footer p span');
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    });
+  </script>
+  <script src="assets/js/scripts.js" defer></script>
 </body>
 </html>
