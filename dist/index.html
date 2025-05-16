@@ -4,6 +4,12 @@
   <meta charset="UTF-8" />
   <title>J. Gregory Walsh – Behavioral Insight for Public Safety</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="J. Gregory Walsh is a Clinical Behavioral Specialist and analyst with expertise in behavioral assessment, crisis management, and public safety analytics. Portfolio, resume, and contact.">
+  <meta property="og:title" content="J. Gregory Walsh – Behavioral Insight for Public Safety">
+  <meta property="og:description" content="Clinical Behavioral Specialist with expertise in behavioral assessment, crisis management, and analytics. Portfolio, resume, and contact.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jgregorywalsh.com/">
+  <meta property="og:image" content="assets/images/profile.jpg">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="icon" href="assets/favicons/favicon.ico" sizes="any">
@@ -28,7 +34,7 @@
         <a href="contact.html" class="hover:underline">Contact</a>
       </nav>
       <!-- Mobile Toggle -->
-      <button id="mobile-menu-toggle" class="md:hidden focus:outline-none" aria-label="Toggle menu" aria-expanded="false">
+      <button id="mobile-menu-toggle" class="md:hidden focus:outline-none" aria-label="Open main menu" aria-controls="mobile-menu" aria-expanded="false">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
@@ -62,11 +68,47 @@
       </ul>
     </section>
 
-    <section>
-      <h3 class="text-xl font-semibold mb-2">Career Goals</h3>
-      <p>
-        To leverage behavioral science and analytics within public-safety, national security, or investigative organizations, supporting strategic initiatives and operational effectiveness across disciplines.
-      </p>
+    <section id="experience">
+      <h3 class="text-xl font-semibold mb-2">Professional Experience</h3>
+      <div class="space-y-4">
+        <div>
+          <h4 class="font-bold">Clinical Behavioral Specialist</h4>
+          <span class="text-sm text-gray-600">McLean-Franciscan’s Inpatient Psychiatric Unit (Harvard Affiliate) | 2020–2024</span>
+          <ul class="list-disc list-inside ml-4 mt-1">
+            <li>Conducted behavioral assessments and crisis interventions for youth and adults in acute psychiatric care.</li>
+            <li>Collaborated with interdisciplinary teams to develop and implement individualized treatment plans.</li>
+            <li>Trained staff in de-escalation, safety protocols, and trauma-informed care.</li>
+            <li>Collected and analyzed clinical data to inform care strategies and improve outcomes.</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold">Research Assistant</h4>
+          <span class="text-sm text-gray-600">Boston University, Department of Psychological & Brain Sciences | 2018–2019</span>
+          <ul class="list-disc list-inside ml-4 mt-1">
+            <li>Supported research on cognitive and behavioral interventions for anxiety and mood disorders.</li>
+            <li>Administered assessments, managed participant data, and contributed to publications.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h3 class="text-xl font-semibold mb-2">Contact</h3>
+      <form action="https://formspree.io/f/yourformid" method="POST" class="space-y-4 max-w-md">
+        <label class="block">
+          <span class="text-gray-700">Name</span>
+          <input type="text" name="name" required class="mt-1 block w-full rounded border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" />
+        </label>
+        <label class="block">
+          <span class="text-gray-700">Email</span>
+          <input type="email" name="email" required class="mt-1 block w-full rounded border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" />
+        </label>
+        <label class="block">
+          <span class="text-gray-700">Message</span>
+          <textarea name="message" rows="4" required class="mt-1 block w-full rounded border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+        </label>
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Send</button>
+      </form>
     </section>
   </main>
 
@@ -105,7 +147,6 @@
   <script>
     const toggle = document.getElementById('mobile-menu-toggle');
     const menu = document.getElementById('mobile-menu');
-
     toggle.addEventListener('click', () => {
       const expanded = toggle.getAttribute('aria-expanded') === 'true';
       toggle.setAttribute('aria-expanded', !expanded);
