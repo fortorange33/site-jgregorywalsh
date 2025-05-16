@@ -2,6 +2,13 @@
 
 This project is a basic static site setup designed for deployment on Cloudflare Pages. It includes a simple HTML structure, styling with Tailwind CSS, and optional JavaScript functionality.
 
+[![GitHub](https://img.shields.io/badge/Source-GitHub-black?logo=github&style=flat-square)](https://github.com/fortorange33/site-jgregorywalsh)
+
+
+[![Cloudflare Pages](https://badgen.net/badge/Cloudflare%20Pages/site--jgregorywalsh/F38020?icon=https://jgwalsh.net/assets/icons/cloudflarepages.svg)](https://dash.cloudflare.com/63bd5ab77c2e4c0d47629ce6bcc38633/pages/view/site-jgregorywalsh)
+
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+
 ## Project Structure
 
 ```
