@@ -1,3 +1,6 @@
+<head>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
 <footer class="mt-20 bg-gray-800 text-white py-8 text-sm text-center">
   <p class="mb-4">&copy; <span>2025</span> J. Gregory Walsh</p>
   <div class="flex justify-center items-center space-x-6">
@@ -24,3 +27,23 @@
     </a>
   </div>
 </footer>
+<script>
+  const toggle = document.getElementById('mobile-menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  const menuIcon = toggle.querySelector('svg');
+  toggle.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', !expanded);
+    menu.classList.toggle('hidden');
+    toggle.setAttribute('aria-label', expanded ? 'Open menu' : 'Close menu');
+  });
+  document.addEventListener('DOMContentLoaded', () => {
+    const yearSpan = document.querySelector('footer p span');
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+  });
+</script>
+<script src="assets/js/scripts.js" defer></script>
+</body>
+</html>
