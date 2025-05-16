@@ -19,6 +19,7 @@
   <link rel="manifest" href="assets/favicons/site.webmanifest">
 </head>
 <body class="min-h-screen flex flex-col bg-gray-50 text-gray-800 font-sans leading-relaxed">
+  <a href="#main-content" class="sr-only focus:not-sr-only absolute left-2 top-2 bg-blue-600 text-white px-3 py-2 rounded z-50">Skip to main content</a>
 
   <!-- Header -->
   <header class="bg-white shadow fixed top-0 w-full z-50">
@@ -28,10 +29,10 @@
       </h1>
       <!-- Desktop Menu -->
       <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
-        <a href="about.html" class="hover:underline">About</a>
-        <a href="experience.html" class="hover:underline">Experience</a>
-        <a href="projects.html" class="hover:underline">Projects</a>
-        <a href="contact.html" class="hover:underline">Contact</a>
+        <a href="about.html" class="hover:underline" aria-current="false">About</a>
+        <a href="experience.html" class="hover:underline" aria-current="false">Experience</a>
+        <a href="projects.html" class="hover:underline" aria-current="false">Projects</a>
+        <a href="contact.html" class="hover:underline" aria-current="false">Contact</a>
       </nav>
       <!-- Mobile Toggle -->
       <button id="mobile-menu-toggle" class="md:hidden focus:outline-none" aria-label="Open main menu" aria-controls="mobile-menu" aria-expanded="false">
@@ -50,14 +51,11 @@
   </header>
 
   <!-- Main -->
-  <main class="flex-grow pt-32 max-w-3xl mx-auto px-4 space-y-10">
-    <section>
-      <h2 class="text-2xl font-semibold mb-4">Behavioral Insight for Public Safety</h2>
-      <p>
-        I am a Clinical Behavioral Specialist with over four years of professional experience at McLean-Franciscan’s psychiatric unit, a Harvard-affiliated hospital. With graduate-level coursework in applied clinical psychology from Boston University and Harvard Extension School, I bring expertise in behavioral assessment, crisis management, and quantitative analysis. Currently transitioning toward law enforcement and public-safety roles, I am committed to applying psychological insight and analytical rigor to complex operational challenges.
-      </p>
-    </section>
-
+  <main id="main-content" class="flex-grow pt-32 max-w-3xl mx-auto px-4 space-y-10">
+    <h2 class="text-2xl font-semibold mb-4">Behavioral Insight for Public Safety</h2>
+    <p>
+      I am a Clinical Behavioral Specialist with over four years of professional experience at McLean-Franciscan’s psychiatric unit, a Harvard-affiliated hospital. With graduate-level coursework in applied clinical psychology from Boston University and Harvard Extension School, I bring expertise in behavioral assessment, crisis management, and quantitative analysis. Currently transitioning toward law enforcement and public-safety roles, I am committed to applying psychological insight and analytical rigor to complex operational challenges.
+    </p>
     <section>
       <h3 class="text-xl font-semibold mb-2">Key Competencies</h3>
       <ul class="list-disc list-inside space-y-1">
@@ -68,47 +66,11 @@
       </ul>
     </section>
 
-    <section id="experience">
-      <h3 class="text-xl font-semibold mb-2">Professional Experience</h3>
-      <div class="space-y-4">
-        <div>
-          <h4 class="font-bold">Clinical Behavioral Specialist</h4>
-          <span class="text-sm text-gray-600">McLean-Franciscan’s Inpatient Psychiatric Unit (Harvard Affiliate) | 2020–2024</span>
-          <ul class="list-disc list-inside ml-4 mt-1">
-            <li>Conducted behavioral assessments and crisis interventions for youth and adults in acute psychiatric care.</li>
-            <li>Collaborated with interdisciplinary teams to develop and implement individualized treatment plans.</li>
-            <li>Trained staff in de-escalation, safety protocols, and trauma-informed care.</li>
-            <li>Collected and analyzed clinical data to inform care strategies and improve outcomes.</li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="font-bold">Research Assistant</h4>
-          <span class="text-sm text-gray-600">Boston University, Department of Psychological & Brain Sciences | 2018–2019</span>
-          <ul class="list-disc list-inside ml-4 mt-1">
-            <li>Supported research on cognitive and behavioral interventions for anxiety and mood disorders.</li>
-            <li>Administered assessments, managed participant data, and contributed to publications.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h3 class="text-xl font-semibold mb-2">Contact</h3>
-      <form action="https://formspree.io/f/yourformid" method="POST" class="space-y-4 max-w-md">
-        <label class="block">
-          <span class="text-gray-700">Name</span>
-          <input type="text" name="name" required class="mt-1 block w-full rounded border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" />
-        </label>
-        <label class="block">
-          <span class="text-gray-700">Email</span>
-          <input type="email" name="email" required class="mt-1 block w-full rounded border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" />
-        </label>
-        <label class="block">
-          <span class="text-gray-700">Message</span>
-          <textarea name="message" rows="4" required class="mt-1 block w-full rounded border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
-        </label>
-        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Send</button>
-      </form>
+    <section>
+      <h3 class="text-xl font-semibold mb-2">Career Goals</h3>
+      <p>
+        To leverage behavioral science and analytics within public-safety, national security, or investigative organizations, supporting strategic initiatives and operational effectiveness across disciplines.
+      </p>
     </section>
   </main>
 
@@ -117,28 +79,28 @@
     <p class="mb-4">&copy; 2025 J. Gregory Walsh</p>
     <div class="flex justify-center items-center flex-wrap gap-6">
       <a href="https://www.linkedin.com/in/jgregorywalsh" target="_blank" rel="noopener" aria-label="LinkedIn">
-        <img src="assets/icons/linkedin.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="LinkedIn" />
+        <img src="assets/icons/linkedin.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="LinkedIn" loading="lazy" />
       </a>
       <a href="https://www.usajobs.gov/applicant/profile/" target="_blank" rel="noopener" aria-label="USAJobs">
-        <img src="assets/icons/usajobs.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="USAJobs" />
+        <img src="assets/icons/usajobs.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="USAJobs" loading="lazy" />
       </a>
       <a href="https://orcid.org/0000-0002-4420-5724" target="_blank" rel="noopener" aria-label="ORCID">
-        <img src="assets/icons/orcid.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="ORCID" />
+        <img src="assets/icons/orcid.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="ORCID" loading="lazy" />
       </a>
       <a href="https://www.researchgate.net/profile/Jg_Walsh" target="_blank" rel="noopener" aria-label="ResearchGate">
-        <img src="assets/icons/researchgate.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="ResearchGate" />
+        <img src="assets/icons/researchgate.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="ResearchGate" loading="lazy" />
       </a>
       <a href="https://jgwalsh.academia.edu" target="_blank" rel="noopener" aria-label="Academia.edu">
-        <img src="assets/icons/academia.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="Academia.edu" />
+        <img src="assets/icons/academia.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="Academia.edu" loading="lazy" />
       </a>
       <a href="https://scholar.google.com" target="_blank" rel="noopener" aria-label="Google Scholar">
-        <img src="assets/icons/google-scholar.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="Google Scholar" />
+        <img src="assets/icons/google-scholar.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="Google Scholar" loading="lazy" />
       </a>
       <a href="https://github.com/jgwalsh02134" target="_blank" rel="noopener" aria-label="GitHub">
-        <img src="assets/icons/github.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="GitHub" />
+        <img src="assets/icons/github.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="GitHub" loading="lazy" />
       </a>
       <a href="https://www.facebook.com/jgregwalsh" target="_blank" rel="noopener" aria-label="Facebook">
-        <img src="assets/icons/facebook.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="Facebook" />
+        <img src="assets/icons/facebook.svg" class="h-6 w-6 hover:opacity-80 transition-opacity" alt="Facebook" loading="lazy" />
       </a>
     </div>
   </footer>
@@ -147,6 +109,7 @@
   <script>
     const toggle = document.getElementById('mobile-menu-toggle');
     const menu = document.getElementById('mobile-menu');
+
     toggle.addEventListener('click', () => {
       const expanded = toggle.getAttribute('aria-expanded') === 'true';
       toggle.setAttribute('aria-expanded', !expanded);
